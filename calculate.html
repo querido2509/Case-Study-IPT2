@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculate</title>
+    <style>
+        body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+        }
+        .form {
+          width: 300px;
+          padding: 40px;
+          position: absolute;
+          top: 20%;
+          left: 40%;
+          margin: 2px;
+        }
+        p {
+            background-color: #141414;
+            color: white;
+            position: relative;
+            padding: 10px;
+            width: 300px;
+        }
+
+    </style>
+
+    <script>
+        function add(){
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var ans = parseFloat(num1) + parseFloat(num2);
+
+            document.getElementById('result').innerHTML = ans;
+        }
+        function sub(){
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var ans = parseFloat(num1) - parseFloat(num2);
+
+            document.getElementById('result').innerHTML = ans;
+        }
+        function multi(){
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var ans = parseFloat(num1) * parseFloat(num2);
+
+            document.getElementById('result').innerHTML = ans;
+        }
+        function divi(){
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var ans = parseFloat(num1) / parseFloat(num2);
+
+            document.getElementById('result').innerHTML = ans;
+        }
+    </script>
+    </head>
+    <body>
+        <div class="form">
+            <p>Output</p>
+                1st Number:&nbsp;&nbsp;&nbsp;<input type="text" id="fnum" name="Num1"><br>
+                2nd Number:&nbsp;&nbsp;<input type="text" id="snum" name="Num2"><br><br>
+                <input type="submit" value="Add" onclick="add()">
+                <input type="submit" value="Subtract" onclick="sub()">
+                <input type="submit" value="Multiply" onclick="multi()">
+                <input type="submit" value="Divide" onclick="divi()"><br><br>
+                The result is:&nbsp;&nbsp; <span id="result"></span>
+        </div>
+           
+    </body>
+</html>
