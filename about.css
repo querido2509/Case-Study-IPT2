@@ -1,0 +1,475 @@
+.topnav{
+    background-color: rgba(16, 88, 70, 0.541);
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav a {
+   float: left;
+   color: rgb(57, 10, 114);
+   text-align: center;
+   padding: 4px 10px;
+   text-decoration: none;
+   font-size: 23px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 15px;
+   
+}
+
+.topnav a.home {
+   float: right;
+   color:rgba(16, 88, 70, 0.541);
+   text-align: center;
+   padding: 4px 10px;
+   text-decoration: none;
+   font-size: 23px;
+   font-family: sans-serif;
+   padding: 15px;
+   
+}
+
+/* Without a hover*/
+.topnav a.home{
+   transition-duration: 1s;
+   background-color: rgba(16, 88, 70, 0.541);
+   color:white   
+}
+
+.topnav a.dogiechannel{
+   transition-duration: 1s;
+   background-color: rgba(16, 88, 70, 0.541);
+   color:white;
+}
+
+.topnav a.about{
+   transition-duration: 1s;
+   background-color: rgba(111, 121, 113, 0.836);
+   color:rgb(0, 0, 0);
+}
+
+/* Hovering Changes Links Color */
+
+.topnav a.dogiechannel:hover{
+   transition-duration: 0.7s;
+   background-color: rgba(222, 233, 224, 0.836);
+   color: rgb(216, 8, 8);   
+}
+.topnav a.home:hover{
+   transition-duration: 0.7s;
+   background-color: rgba(222, 233, 224, 0.836);
+   color: black;  
+}
+.topnav a.icon:hover{
+   background-color: rgba(16, 236, 71, 0.5);
+}
+/* Hovering Changes Links Color */
+
+.topnav a.icon{
+   display:none;
+}
+
+body,html{
+   background-color: rgb(7, 36, 16);
+   height: 100%;   
+   margin: 0;
+}
+
+.hero-image{
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("pewdiepie about.jpg");
+   height: 60%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   transition: height 1.5s;
+}
+
+.hero-image:hover{
+   height:85%;
+}
+
+.hero-text{
+   text-align: center;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: rgb(22, 4, 65);
+   font-family: 'Castellar', Arial, sans-serif;
+   text-shadow: 0.3em.3em.3em #e3e9e4;
+   animation: shake 2.5s, flicker 2s, linear forwards;
+   animation-iteration-count: infinite;
+}
+
+h1{
+  font-size: 63px;
+  
+}
+
+.hero-text button{
+   border: none;
+   outline: 0;
+   width:50%;
+   display: inline-block;
+   padding: 10px 25px;
+   color: black;
+   background-color: rgb(148, 161, 163);
+   text-align: center;
+   transition-property: backround-color;
+   transition: width 2s;
+   transition-duration: 2s;
+}
+
+.hero-text button:hover{
+   background-color: rgb(146, 10, 17);
+   color: white;
+   width:100%;
+}
+
+.hero-text p{
+   color: rgb(248, 251, 255);
+}
+
+
+/* ^^^ Part 3 ^^^ */
+.animate{
+   font-family: poppins;
+   font-weight: 1000;
+   font-size: 7vw;
+   letter-spacing: 12px;
+   text-align:center;
+   padding: 25px 25px;
+}
+
+.animate span{
+   color: rgb(190, 27, 231);
+   text-transform: uppercase;
+   animation: animate 4s ease forwards infinite;
+   animation-delay: 1s;
+   font-family: 'Castellar', Arial, sans-serif;
+
+}
+
+.animate span:nth-child(1){
+   animation-delay: 0.1s;
+}
+
+.animate span:nth-child(2){
+   animation-delay: 0.5s;
+}
+
+.animate span:nth-child(3){
+   animation-delay: 0.8s;
+}
+
+@keyframes animate{
+   0%,100%{
+       text-shadow: 0 0 0 rgb(14, 1, 17);
+   }
+   50%{
+       text-shadow: 0 30px 15px rgb(0, 0, 0);
+   }
+}
+
+/* ^^^ Part 3/4 ^^^ */
+.columns {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   margin: 5px 5px;
+ }
+ .column {
+   flex: 1;
+   border: 2px solid #000000;
+   margin: 5px;
+   padding: 10px;
+   height: auto;
+   -webkit-box-shadow: 3px 5px 5px #45a29e;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow: 3px 5px 5px #45a29e;  /* Firefox 3.5 - 3.6 */
+   box-shadow: 3px 5px 5px #45a29e;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+ }
+ .column iframe:hover{
+   transition: transform 1s;
+   transform: scale(1.07);
+   opacity: 0.7;
+ }
+
+ .vtext{ 
+     color: rgb(252, 252, 252);
+     border: 8px solid rgb(28, 44, 187);
+     border-radius: 10px;
+     background:transparent;
+     height: 28px;
+     box-shadow: 3px 5px 5px #2e87ca ;
+     font-size: 20px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     padding: 1px 1px;
+     font-family: 'Castellar', Arial, sans-serif;
+     text-shadow: 0.3em.3em.3em #6c98d1;
+   animation: shake 2.5s, flicker 2s, linear forwards;
+   animation-iteration-count: infinite;
+ }
+
+
+/* Responsiveness in Mobile Phones */
+@media screen and (max-width:700px){
+   .topnav a {
+       float: none;
+       display: block;
+       color: rgb(33, 146, 211);
+       text-align: left;
+       padding: 5px 10px;
+       text-decoration: none;
+       font-size: 20px;
+       font-family: sans-serif;   
+   }
+   
+   .topnav a.home{
+       float: none;
+       display: block;
+       color: rgb(255, 255, 255);
+       text-align: left;
+       padding: 5px 10px;
+       text-decoration: none;
+       font-size: 20px;
+       font-family: sans-serif;   
+   }
+
+   
+
+   .topnav #Mylinks{
+       display: none;
+   }    
+   .topnav a.icon{
+       float: right;
+       display: block;
+   }
+
+   .hero-image{
+       background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("pewdiepie about.jpg");
+       height: 20%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       transition: height 1.5s;
+   }
+   
+   .hero-image:hover{
+       height:30%;
+ 
+   }
+   h1{
+       font-size: 30px;
+   }
+
+   .hero-text button{
+       border: none;
+       outline: 0;
+       width:70%;
+       display: inline-block;
+       padding: 10px 15px;
+       color: black;
+       background-color: rgb(59, 164, 196);
+       text-align: center;
+       transition-property: backround-color;
+       transition: width 2s;
+       transition-duration: 2s;
+
+   }
+
+   .vtext{ 
+       color: rgb(242, 247, 0);
+       border: 8px solid rgb(28, 45, 194);
+       border-radius: 10px;
+       background:transparent;
+       height: 22px;
+       box-shadow: 3px 5px 5px #2e87ca ;
+       font-size: 16px;
+       margin-top: 5px;
+       margin-bottom: 5px;
+       padding: 1px 1px;
+       font-family: 'Castellar', Arial, sans-serif;
+       text-shadow: 0.2em.2em.2em #09d609;
+       animation: shake 2.5s, flicker 2s, linear forwards;
+       animation-iteration-count: infinite;
+   }
+
+   body,html{
+       background-color: rgb(21, 87, 42);
+       height: 100%;   
+       margin: 0;
+   }
+
+   .columns {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   margin: 5px 5px;
+ }
+ .column {
+   flex: 1;
+   border: 2px solid #000000;
+   margin: 5px;
+   padding: 10px;
+   height: 90%;
+   -webkit-box-shadow: 3px 5px 5px #45a29e;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow: 3px 5px 5px #45a29e;  /* Firefox 3.5 - 3.6 */
+   box-shadow: 3px 5px 5px #45a29e;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+ }
+ .column iframe:hover{
+   transition: transform 1s;
+   transform: scale(1.07);
+   opacity: 0.7;
+ }
+
+}
+
+/* About Information * About PewDiePie */
+#info {  
+    border:5px solid rgb(231, 60, 231); 
+    padding: 15px; 
+    border-width: 3px 15px;
+    padding-top: 1px;
+    float: center;
+    
+}  
+#paragraph {  
+    font-family: calibri, 'trebuch';
+    font-size: 23px;
+    text-align:justify; 
+    text-justify: inter-word; 
+    margin-left: 5px;
+    color: rgb(33, 137, 241);
+    text-shadow: 0.2em.2em.2em #000000;
+}  
+h1 { 
+    text-align:center; 
+    color: rgb(234, 250, 235);
+    text-shadow: 0.2em.2em.2em #00000098;
+    animation: shake 2.5s, flicker 2s, linear forwards;
+    animation-iteration-count: infinite;
+} 
+
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+@media screen and (min-width:701px) and (max-width:1100px){
+   .topnav a {
+       float: none;
+       display: block;
+       color: rgb(33, 146, 211);
+       text-align: left;
+       padding: 5px 10px;
+       text-decoration: none;
+       font-size: 20px;
+       font-family: sans-serif;   
+   }
+   
+   .topnav a.home{
+       float: none;
+       display: block;
+       color: rgb(255, 255, 255);
+       text-align: left;
+       padding: 5px 10px;
+       text-decoration: none;
+       font-size: 20px;
+       font-family: sans-serif;   
+   }
+
+   .topnav #Mylinks{
+       display: none;
+   }    
+   .topnav a.icon{
+       float: right;
+       display: block;
+   }
+
+   .hero-image{
+       background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("pewdiepie about.jpg");
+       height: 20%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       transition: height 1.5s;
+   }
+   
+   .hero-image:hover{
+       height:30%;
+ 
+   }
+   h1{
+       font-size: 30px;
+   }
+
+   .hero-text button{
+       border: none;
+       outline: 0;
+       width:70%;
+       display: inline-block;
+       padding: 10px 15px;
+       color: black;
+       background-color: rgb(59, 164, 196);
+       text-align: center;
+       transition-property: backround-color;
+       transition: width 2s;
+       transition-duration: 2s;
+
+   }
+
+   .vtext{ 
+       color: rgb(242, 247, 0);
+       border: 8px solid rgb(28, 45, 194);
+       border-radius: 10px;
+       background:transparent;
+       height: 22px;
+       box-shadow: 3px 5px 5px #2e87ca ;
+       font-size: 16px;
+       margin-top: 5px;
+       margin-bottom: 5px;
+       padding: 1px 1px;
+       font-family: 'Castellar', Arial, sans-serif;
+       text-shadow: 0.2em.2em.2em #09d609;
+       animation: shake 2.5s, flicker 2s, linear forwards;
+       animation-iteration-count: infinite;
+   }
+
+   body,html{
+       background-color: rgb(21, 87, 42);
+       height: 100%;   
+       margin: 0;
+   }
+
+   .columns {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   margin: 5px 5px;
+ }
+ .column {
+   flex: 1;
+   border: 2px solid #000000;
+   margin: 5px;
+   padding: 10px;
+   height: 90%;
+   -webkit-box-shadow: 3px 5px 5px #45a29e;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow: 3px 5px 5px #45a29e;  /* Firefox 3.5 - 3.6 */
+   box-shadow: 3px 5px 5px #45a29e;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+ }
+ .column iframe:hover{
+   transition: transform 1s;
+   transform: scale(1.07);
+   opacity: 0.7;
+ }
+
+
+}
